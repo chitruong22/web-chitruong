@@ -74,33 +74,20 @@
 						<p>List product description</p>
 					</div>
 					<div class="product-group">
-						<div class="row">
-							<?php
-							         $conn = mysqli_connect("localhost","root","","test");
-							    
-							          $get_pro = "select * from song LIMIT 0,8";
-							          $run_pro = mysqli_query($conn, $get_pro);
-					                 while($row_pro = mysqli_fetch_array($run_pro)){
-					                $Song_id = $row_pro['song_id'];
-							          $Song_name = $row_pro['song_name'];
-							         $Song_image = $row_pro['img'];
-							           $Song_price = $row_pro['song_price'];
-							            $Song_mp3 = $row_pro['song_mp3'];
-				                     echo "<div class='col-md-3 col-sm-6 col-12'>
+						<div class="row">							
+				                    <div class='col-md-3 col-sm-6 col-12'>
 								<div class='card card-product mb-3'>
-								  <img class='card-img-top' src='admin/images/$Song_image' style='width: 280px;height: 280px' alt='Card image cap'>
+								  <img class='card-img-top' src='https://gotrangtri.vn/wp-content/uploads/2019/12/do-choi-cho-be-trai-1-tuoi-3.jpg' style='width: 280px;height: 280px' alt='Card image cap'>
 								  <div class='card-body'>
-								    <h5 class='card-title'>$Song_name</h5>
-								    <h5 class='card-title' style='color:red'>$Song_price$</h5>
-								    <p class='card-text'>
-								    	
+								    <h5 class='card-title'>Product1</h5>
+								    <h5 class='card-title' style='color:red'>20$</h5>
+								    <p class='card-text'>								    	
 								    	</p>
-								    <a class='btn btn-primary' href='single.php?id=$Song_id'> details</a>
+
 								  </div>
 								</div>
 							</div>
-				                               ";
-				            }?>
+
 						</div>
 					</div>
 				</div>
